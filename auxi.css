@@ -2,20 +2,22 @@ body {
   background-image: url("background.jpg");
   background-repeat: no-repeat;
   text-align: center;
-  background-size: 1920px 1080px;
+  background-size: 300% 300%;
 }
 
-h1 {
+.headetal {
     color: navy;
     text-align: center;
 }
 
-p {
+.textos {
+    color: black;
     text-align: center;
 }
 
-ul {
-    color: black;
+
+.lista {
+    color: navy;
     width: 250px;
     margin-left: 20px;
     border: 10px outset ;
@@ -30,8 +32,4 @@ border-radius: 50%;
 margin-left: auto;
 margin-right: auto;
 margin-bottom: 20px;
-}
-
-.container_icon {
-  margin-bottom: 100px;
 }
