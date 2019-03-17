@@ -1,29 +1,24 @@
 body {
-  background-image: url("background.jpg");
+  background-image: url("images/background.jpg");
   background-repeat: no-repeat;
   text-align: center;
   background-size: 300% 300%;
 }
 
 .headetal {
-    color: navy;
-    text-align: center;
-}
-
-.textos {
     color: black;
     text-align: center;
 }
 
-
 .lista {
-    color: navy;
+    color: black;
     width: 250px;
     margin-left: 20px;
     border: 10px outset ;
     padding: 0px;
     margin: auto;
     text-align: center;
+    opacity: 1;
 }
 
 .perfil {
@@ -37,7 +32,17 @@ margin-bottom: 20px;
 .icons{
 display: block;
 text-align: center;
-size: 7px;
-
-
+margin-top: 10px;
 }
+
+.textos {
+    color: black;
+    text-align: center;
+    opacity: 1;
+}
+
+.greyicon {
+    color: 	#6B8488;
+    margin: 13px;
+  }
+  
