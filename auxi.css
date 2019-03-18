@@ -46,3 +46,6 @@ margin-top: 10px;
     margin: 13px;
   }
   
+  .greyicon:hover {
+    color: #069e4a;
+}
