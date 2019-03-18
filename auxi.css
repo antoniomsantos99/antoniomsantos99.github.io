@@ -13,7 +13,7 @@ body {
 .lista {
     color: black;
     width: 250px;
-    margin-left: 20px;
+    margin-left: auto;
     border: 10px outset ;
     padding: 0px;
     margin: auto;
