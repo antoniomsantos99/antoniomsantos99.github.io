@@ -1,8 +1,8 @@
 body {
-  background-image: url("images/background.jpg");
+  background-image: url("images/Background3.png");
   background-repeat: no-repeat;
   text-align: center;
-  background-size: 300% 300%;
+  background-size: cover;
 }
 
 .headetal {
@@ -11,10 +11,11 @@ body {
 }
 
 .lista {
-    color: black;
+    color: gray;
+    border-bottom-color: #6B8488;
     width: 250px;
     margin-left: auto;
-    border: 10px outset ;
+    border: 3px outset;
     padding: 0px;
     margin: auto;
     text-align: center;
