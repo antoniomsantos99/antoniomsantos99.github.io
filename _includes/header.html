@@ -1,0 +1,16 @@
+<nav id="my-menu">
+  <div>
+    <p>{{ site.title }}</p>
+
+    <ul class="pages">
+      <li><a href="{{ site.baseurl }}/"><i class="fa fa-home"></i> Home</a></li>
+      <li><a href="{{ site.baseurl }}/projects/"><i class="fa fa-laptop"></i> Projects</a></li>
+      <li><a href="{{ site.baseurl }}/posts/"><i class="fa fa-archive"></i> All Posts</a></li>
+      <li><a href="{{ site.baseurl }}/search/"><i class="fa fa-search"></i> Search</a></li>
+      <li><a href="{{ site.baseurl }}/WIP/paraindex/"><i class="fa fa-trash"></i> WIP Website</a></li>
+    </ul>
+
+    {% include social_links.html %}
+  </div>
+</nav>
+<div class="menu-button" href="#menu"><i class="fa fa-bars"></i></div>

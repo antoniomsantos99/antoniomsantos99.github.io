@@ -1,1 +1,38 @@
-theme: jekyll-theme-minimal
+# Site settings
+title: "Cantinho do Tonecas"
+email: antoniomsantos99@gmail.com
+description: "Software Engineering Student in Universidade do Minho. Tinkering with computers since 2008!"
+baseurl: ""
+url: "http://antoniomsantos99.github.io/"
+title_description: "Software Engineering Student in Universidade do Minho. Tinkering with computers since 2008!"
+title_image: "assets/eu.jpg"
+google_analytics:
+disqus_account: RockyPoint
+github_repository:
+addthis_id: ra-513c6fa83da6ec67
+post_limit: 5
+
+# Social usernames/URLs
+twitter_username: 
+github_username:  antoniomsantos99
+instagram_username: mpb_antonio
+reddit_username: rockyrino
+linkedin_link: 
+google_plus_link: 
+stackoverflow_link: 
+xing_link:
+facebook_link:
+
+# Footer
+footer_left: "Mantained with <i class=\"fa fa-heart\"></i> by <a href=\"https://github.com/antoniomsantos99\">António Santos</a>"
+footer_right: "#2019"
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+permalink: pretty
+exclude: [vendor]

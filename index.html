@@ -1,41 +1,49 @@
-<!DOCTYPE html>
-<html>
-    <meta name=”viewport” content=”width=device-width, initial-scale=1″>
-    <html lang="pt-PT">
-    <title>Cantinho do Tonecas</title>
-    <head>
-        <link rel="stylesheet" type="text/css" href="auxi.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    </head>
-    <body>
+---
+layout: default
+make-smaller-titles: true
+---
 
-        <h1 class="headetal">Ol&aacute; pessoa!</h1>
-        <p class="textos">Eu sou o Ant&oacute;nio e gosto de:</p>
-        <img src="images/eu.jpg" class="perfil" alt="Eu sou um menino maroto que meteu a imagem no sitio errado" style="color:red" width="200">
-        <div>
-            <ul class="lista">
-                <li class="textos">Passeios na Praia</li>
-                <li class="textos">Ouvir musica</li>
-                <li class="textos">Tocar-me no banho</li>
-            </ul>
+
+<div class="container-fluid index">
+    <div class="row">
+
+        <div class="col-md-12 main content-panel">
+
+            <div class="gravatar">
+                <img src="{{ site.title_image }}" class="img-circle about-image" height="150" width="150" alt="{{ site.title }}" />
+            </div>
+
+            <h1 class="header author-header" itemprop="headline">{{ site.title }}</h1>
+
+            <div class="author-text">
+                {{ site.title_description }}
+            </div>
+
+            {% include social_links.html %}
+          </div>
+          <div class="col-md-12 main content-panel">
+
+            <div class="articles">
+
+              <h2>Latest Articles</h2>
+
+              <ul>
+                  {% for post in site.posts limit: site.post_limit %}
+
+                      <li>
+                          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                          <small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small>
+                      </li>
+
+                  {% endfor %}
+                  <li>
+                      <small><i><a href="{{ site.baseurl }}/posts/">more...</a></i></small>
+                  </li>
+              </ul>
+
+            </div>
+
         </div>
-        <div style="text-align:center; margin-top:20px;">
-            <a href="parallax/paraindex.html">
-                <input type="button" value="Visit WIP Version" />
-             </a>
-        </div>
 
-        <div class="icons">
-            <a href="mailto:antoniomsantos99@gmail.com"><i class="fa fa-envelope fa-2x greyicon" aria-hidden="true"></i></a>
-            <a href="https://github.com/antoniomsantos99" target="_blank"><i class="fab fa-github fa-2x greyicon" aria-hidden="true"></i></a>
-            <a href="https://twitter.com/mogwaimecaralho" target="_blank"><i class="fab fa-twitter-square fa-2x greyicon" aria-hidden="true"></i></a>
-            <a href="https://www.instagram.com/mpb_antonio/" target="_blank"><i class="fab fa-instagram fa-2x greyicon" aria-hidden="true"></i></a>
-        </div>
-
-
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    </body>
-</html>
+    </div>
+</div>
