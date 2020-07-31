@@ -148,7 +148,7 @@ To make it right-click we just need to write the following line:
 ```Python
 pyautogui.rightClick()
 ```
-Now we add it to our code along with some a misc item counter:
+Now we add it to our code along with a misc item counter:
 
 ```Python
 import numpy as np  
