@@ -143,7 +143,7 @@ while True:
 Now we just need to emulate our bot actions. Onto the next step!
 
 ### Step 2.3 Emulating the actions
-Since our bot is pretty basic this part is actually the easiest part! We just need to make the bot press right-click when a fish bites to reel the line and press it again some time later to rethrow it! To make our bot press right-click we are going to use one last library called [PyAutoGui](https://pypi.org/project/PyAutoGUI/) which enables us to do all kind stuff involving virtual input!
+Since our bot is pretty basic this part is actually the easiest! We just need to make the bot press right-click when a fish bites to reel the line and press it again some time later to rethrow it! To make our bot press right-click we are going to use one last library called [PyAutoGui](https://pypi.org/project/PyAutoGUI/) which enables us to do all kind stuff involving virtual input!
 To make it right-click we just need to write the following line: 
 ```Python
 pyautogui.rightClick()
@@ -154,6 +154,7 @@ Now we add it to our code along with a misc item counter:
 import numpy as np  
 from PIL import ImageGrab  
 import cv2
+import pyautogui
 import time  
 
 pytesseract.pytesseract.tesseract_cmd = 'PATH TO TESSERACT'
