@@ -166,7 +166,7 @@ while True:
   if "eae Bais) see ea" in pytesseract.image_to_string(thresh):
     items+=1
     pyautogui.rightClick()
-    print("Caught {} items!".format(i))
+    print("Caught {} items!".format(items))
     time.sleep(1.5)
     pyautogui.rightClick()
 
