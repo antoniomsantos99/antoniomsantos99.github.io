@@ -902,3 +902,56 @@ td{
     padding: 2px;
     border:1px solid $dark-blue;;
 }
+
+/* Container to control width and centering */
+.linktree-wrapper {
+  max-width: 680px; /* Typical width for link pages */
+  margin: 0 auto;   /* Centers the container */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;        /* Space between cards */
+}
+
+/* The individual link cards */
+.link-card {
+  display: block;
+  width: 100%;
+  padding: 16px 20px;
+  background-color: $sudo-green; /* Light grey background */
+  border: 2px solid #6f8b47; /* Subtle border */
+  border-radius: 30px;       /* Rounded corners like Linktree */
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Hover effects */
+.link-card:hover {
+  transform: translateY(-3px); /* Moves up slightly */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #000000;
+  border-color: #ffffff; /* Change this to your brand color */
+  color: #000000;        /* Change this to your brand color */
+  text-decoration: none;
+}
+
+/* Icon Color on Hover */
+.link-card:hover i {
+  /* Optional: Keep the color the same or use a slightly darker/lighter shade */
+  color: var(--brand-color); 
+  transform: scale(1.5);
+  transition: scale 0.2s ease-in-out;
+}
+
+/* Text Color on Hover (Optional) */
+.link-card:hover span {
+  /* TEXT COLOR: Uses the dynamic color */
+  color: var(--brand-color); 
+  font-weight: 900; 
+  transform: scale(1.02); 
+  transition: transform 0.2s ease-in-out; 
+}

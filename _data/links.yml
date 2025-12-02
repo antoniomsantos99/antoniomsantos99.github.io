@@ -1,0 +1,24 @@
+- name: Letterboxd (Films)
+  url: https://letterboxd.com/Tonecas/
+  icon: fa fa-film
+  color: "#009D1A"
+
+- name: Backloggd (Games)
+  url: https://backloggd.com/u/Tonecas/
+  icon: fa fa-gamepad
+  color: "#FC6399"
+
+- name: Spotify
+  url: https://open.spotify.com/user/antoniomsantos?si=d2787ea8df3e455c
+  icon: fa fa-spotify
+  color: "#009D1A"
+
+- name: Twitch
+  url: https://www.twitch.tv/tonecasdasquecas
+  icon: fa fa-twitch
+  color: "#944CFF"
+
+- name: Steam
+  url: https://steamcommunity.com/profiles/76561198034932432
+  icon: fa fa-steam
+  color: "#FFFFFF"
